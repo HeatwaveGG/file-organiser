@@ -1,21 +1,8 @@
 import os, shutil
+from all_file_types import file_types
 
 unoragnised_files_folder = input("Enter path to unorganised files : ")
 organised_files_folder = input("Enter path to organised files : ")
-
-file_types = {
-    "Image": [".jpg", ".jpeg", ".png", ".gif", ".bmp", ".tiff", ".svg", ".webp"],
-    "Video": [".mp4", ".avi", ".mov", ".wmv", ".flv", ".mkv", ".webm", ".mpeg"],
-    "Audio": [".mp3", ".wav", ".aac", ".flac", ".ogg", ".wma", ".m4a"],
-    "Document": [".pdf", ".doc", ".docx", ".txt", ".rtf", ".odt", ".xls", ".xlsx", ".ppt", ".pptx"],
-    "Archive": [".zip", ".rar", ".7z", ".tar", ".gz", ".bz2", ".iso"],
-    "Database": [".db", ".sqlite", ".mdb", ".accdb", ".sql", ".csv"],
-    "Code": [".py", ".js", ".java", ".cpp", ".c", ".cs", ".html", ".css", ".php", ".rb", ".go", ".ts"],
-    "Executable": [".exe", ".msi", ".bat", ".sh", ".apk", ".app"],
-    "Presentation": [".ppt", ".pptx", ".key", ".odp"],
-    "Spreadsheet": [".xls", ".xlsx", ".ods",],
-    "No extension": [""]
-}
 
 files = os.listdir(unoragnised_files_folder)
 
