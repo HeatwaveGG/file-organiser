@@ -33,3 +33,5 @@ for file in files:
             os.path.join(unoragnised_files_folder, file),
             os.path.join(dest_folder, file)
         )
+
+print ("Done")
